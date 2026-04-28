@@ -1,6 +1,3 @@
-Pdfupload · TSX
-Copy
-
 // src/components/PDFUpload.tsx
 // DROP-IN REPLACEMENT — only touches the Analysis (PDF) mode
 // RAG pipeline: PDF → extract text → chunk → TF-IDF retrieval → Gemini answer
