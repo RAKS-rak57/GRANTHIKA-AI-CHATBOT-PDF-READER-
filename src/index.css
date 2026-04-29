@@ -5,9 +5,7 @@
   body {
     margin: 0;
     min-height: 100vh;
-    background-image: 
-      linear-gradient(rgba(10, 5, 20, 0.18), rgba(10, 5, 20, 0.05)),
-      url("./assets/bg.jpg");
+    background-image: url("./assets/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
