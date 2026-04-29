@@ -1,15 +1,18 @@
 @import "tailwindcss";
- 
+
 /* ============================= Base ============================= */
 @layer base {
   body {
     margin: 0;
     min-height: 100vh;
-    background-image: url("./assets/bg.jpg");
+    background-image: 
+      linear-gradient(rgba(10, 5, 20, 0.72), rgba(10, 5, 20, 0.72)),
+      url("./assets/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: white;
   }
   .app-container {
     display: flex;
@@ -25,7 +28,7 @@
     overflow: hidden;
   }
 }
- 
+
 /* ============================= Utilities ============================= */
 @layer utilities {
   .glass {
@@ -43,7 +46,7 @@
       inset 0 1px 1px rgba(255, 255, 255, 0.35);
     transition: all 0.35s ease;
   }
- 
+
   .glass-soft {
     background: linear-gradient(
       135deg,
@@ -57,7 +60,7 @@
       inset 0 1px 1px rgba(255, 255, 255, 0.35),
       0 20px 50px rgba(0, 0, 0, 0.45);
   }
- 
+
   .glass::before {
     content: "";
     position: absolute;
@@ -72,7 +75,7 @@
     opacity: 0.35;
     pointer-events: none;
   }
- 
+
   .glass::after {
     content: "";
     position: absolute;
@@ -88,7 +91,7 @@
     filter: blur(8px);
     z-index: -1;
   }
- 
+
   .glass:hover {
     transform: translateY(-6px) scale(1.01);
     transition: all 0.35s ease;
@@ -97,19 +100,19 @@
       0 0 20px rgba(255, 255, 255, 0.25),
       inset 0 1px 2px rgba(255, 255, 255, 0.45);
   }
- 
+
   .glass:hover::before {
     background-position: 200% 200%;
     transition: background-position 1s ease;
   }
- 
+
   .glass-hover:hover {
     transform: translateY(-4px);
     box-shadow:
       inset 0 1px 1px rgba(255, 255, 255, 0.45),
       0 30px 80px rgba(0, 0, 0, 0.6);
   }
- 
+
   .glass-shine::before {
     content: "";
     position: absolute;
@@ -123,26 +126,26 @@
     opacity: 0.25;
     pointer-events: none;
   }
- 
+
   .glass-glow {
     box-shadow:
       0 0 0 1px rgba(180, 140, 255, 0.35),
       0 20px 60px rgba(120, 70, 255, 0.35);
   }
- 
+
   .cosmo-text {
     background: linear-gradient(to right, #d8b4fe, #c4b5fd, #f0abfc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
- 
+
   /* ============================= Animations ============================= */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
     to   { opacity: 1; transform: translateY(0); }
   }
- 
+
   .animate-fadeUp {
     animation: fadeUp 0.6s ease-out;
   }
