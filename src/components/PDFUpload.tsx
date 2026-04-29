@@ -13,9 +13,9 @@ import {
   updateSessionTitle,
   type ChatSession,
   type Message as DBMessage,
-} from "../lib/supabase";
+} from "../lib/Supabase.ts";
  
-// ─── Types ────────────────────────────────────────────────────────────────────
+// ─── Types ───────────────────────────────────────────────────────────────────
 interface Chunk { id: number; text: string; }
  
 interface UIMessage { role: "user" | "assistant"; content: string; }
